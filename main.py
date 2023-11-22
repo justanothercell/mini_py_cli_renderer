@@ -1,4 +1,7 @@
-from msvcrt import getch
+try:
+    from getch import getch
+except:
+    from msvcrt import getch
 import os
 import numpy as np
 from math import sin, cos
