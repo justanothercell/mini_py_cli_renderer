@@ -26,13 +26,13 @@ class Screen:
 
 screen = Screen()
 
-for x in range(120):
-    for y in range(80):
-        screen.pixels[x, y] = [x * 255 // 120, y * 255 // 120, 0]
+#for x in range(120):
+    #for y in range(80):
+#        screen.pixels[x, y] = [x * 255 // 120, y * 255 // 120, 0]
 
-screen.render()
-
-exit()
+#screen.render()
+#
+#exit()
 
 def double_pendulum(theta1, theta2, omega1, omega2, l1, l2, m1, m2, g, dt):
     alpha1 = (-g*(2*m1 + m2 )*sin(theta1)-g*m2 *sin(theta1 -2*theta2 )-2*m2 *sin(theta1 -theta2 )*(omega2 *omega2 *l2 +omega1 *omega1 *l1 *cos(theta1 -theta2 )))/(l1 *(2*m1 +m2 -m2 *cos(2*theta1 -2*theta2 )))
